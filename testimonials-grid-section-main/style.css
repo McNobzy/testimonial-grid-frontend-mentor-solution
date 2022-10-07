@@ -17,6 +17,9 @@ body{
     color: #fff;
     position: relative;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #quote{
@@ -31,6 +34,9 @@ body{
 #testimonial-2{
     background-color: #48556a;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #testimonial-3{
@@ -47,6 +53,14 @@ body{
 #testimonial-5{
     background-color: #fff;
     color: #48556a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#testimonial-5 #t5-para{
+    /* color:red; */
+    line-height: 18px;
 }
 
 #testimonials{
@@ -85,7 +99,6 @@ body{
 }
 
 .header-text{
-    border: 1px solid black;
     height: 35px;
     display: flex;
     flex-direction: column;
@@ -105,18 +118,18 @@ body{
 @media (min-width: 576px){
     #testimonials{
         display: flex;
-        max-width: 900px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
     #testimonial-5{
-        flex-basis: 30%;
+        flex-basis: 25%;
     }
 
     #main-left{
         display: flex;
         flex-direction: column;
-        flex-basis: 70%;
+        flex-basis: 75%;
     }
 
     #main-left .grid-item{
@@ -136,19 +149,19 @@ body{
     }
 
     #testimonial-1{
-        flex-basis: 65%;
+        flex-basis: 70%;
     }
 
     #testimonial-2{
-        flex-basis: 35%;
+        flex-basis: 30%;
     }
 
     #testimonial-3{
-        flex-basis: 35%;
+        flex-basis: 30%;
     }
 
     #testimonial-4{
-        flex-basis: 65%;
+        flex-basis: 70%;
     }
 }
 
